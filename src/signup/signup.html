@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Signup</title>
+    <link rel="stylesheet" href="signupstyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container-fluid bg">
+        <div class="row">
+            <div class="col-md-3 col-sm-2 col-xs-12"></div>
+            <div class="col-md-6 col-sm-8 col-xs-12">
+                <form class="form-container">
+                    <h1>Create a new account</h1>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-6">
+                            <label>First name</label>
+                            <input type="text" name="fname" class="form-control" placeholder="Enter your first name">
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-6">
+                            <label>Last name</label>
+                            <input type="text" name="lname" class="form-control" placeholder="Enter your last name">
+                        </div>
+                    </div>
+                    <br>
+                    <label>Email</label>
+                    <input type="text" name="email" class="form-control" placeholder="Enter your email address">
+                    <br>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-6">
+                            <label>Password</label>
+                            <input type="text" name="password" class="form-control" placeholder="Enter new password">
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-6">
+                            <label>Retype password</label>
+                            <input type="text" name="rpassword" class="form-control" placeholder="Re-type password">
+                        </div>
+                    </div>
+                    <br>
+                    <label>Mobile no</label>
+                    <input type="text" name="mobileno" class="form-control" placeholder="Enter your mobile no">
+                    <br>
+                    <input type="submit" class="btn btn-success btn-block" id="createAcc" value="Submit">
+                    <a href="#" style="text-decoration: none;color: white" id="haveAnAcc"><h5>Already have an account?</h5></a>
+                </form>
+            </div>
+            <div class="col-md-3 col-sm-2 col-xs-12"></div>
+        </div>
+
+    </div>
+<script type="text/javascript" src="signupjs.js"></script>
+</body>
+</html>
