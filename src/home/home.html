@@ -23,15 +23,15 @@
 
 
 </head>
-<body>
+<body style="background: #D3D3D3">
 <div id="wrapper">
-    <div id="sidebar-wrapper">
+    <div id="sidebar-wrapper" style="overflow:scroll">
         <div class="row">
             <div class="col-md-12">
-                <h1>RoadGuide</h1>
+                <h2 id="sidebar_appName"><b>RoadGuide</b></h2>
             </div>
         </div>
-        <div class="row">
+        <div class="row sidebaroptions">
             <div class="col-md-12 col-sm-12 col-xs-12 travelling_mode">
                 <input type="radio" name="type" id="changemode-walking" checked="checked">
                 <label for="changemode-walking">Walking</label>
@@ -45,7 +45,60 @@
         </div>
         <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12">
-                <h1>Place Details</h1>
+                <h3 class="sidebarContent">Place Details</h3>
+                <div class="row sidebaroptions">
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <h4>Origin address:</h4>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <h4 id="address"></h4>
+                    </div>
+                </div>
+                <!--
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <h4>lat:</h4>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <h4 id="lat">dgg</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <h4>lng:</h4>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <h4 id="lng">dgg</h4>
+                    </div>
+                </div>
+                -->
+                <div class="row sidebaroptions">
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <h4>Destination address:</h4>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <h4 id="address1"></h4>
+                    </div>
+                </div>
+                <!--
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <h4>lat:</h4>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <h4 id="lat1">dgg</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <h4>lng:</h4>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <h4 id="lng1">dgg</h4>
+                    </div>
+                </div>
+                -->
+                <!--
                 <ul>
                     <li id="address"></li>
                     <li id="lat"></li>
@@ -56,15 +109,28 @@
                     <li id="lat1"></li>
                     <li id="lng1"></li>
                 </ul>
+                -->
             </div>
         </div>
         <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12">
-                <h1>Road Details</h1>
-                <ul>
-                    <li id="distanceInKm"></li>
-                    <li id="duration"></li>
-                </ul>
+                <h3 class="sidebarContent">Road Details</h3>
+                <div class="row sidebaroptions">
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <h4>Distance:</h4>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <h4 id="distanceInKm"></h4>
+                    </div>
+                </div>
+                <div class="row sidebaroptions">
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <h4>Duration:</h4>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <h4 id="duration"></h4>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

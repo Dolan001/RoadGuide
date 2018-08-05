@@ -8,3 +8,9 @@ function showImage() {
         fileObj.readAsDataURL(this.files[0]);
     }
 }
+
+$(document).ready(function () {
+    $('#editpro').click(function () {
+        window.location.href="/RoadGuide/src/account/edit_profile.html";
+    });
+});

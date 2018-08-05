@@ -7,8 +7,9 @@
     width: 0;
     top: 70px;
     overflow-y: hidden;
-    background: gray;
+    background: white;
     transition: all 0.3s;
+    border: 1px solid gray;
 }
 
 #content_bg{
@@ -19,11 +20,11 @@
     transition: all 0.3s;
 }
 #wrapper.menuDisplayed #sidebar-wrapper{
-    width: 500px;
+    width: 400px;
     transition: all 0.3s;
 }
 #wrapper.menuDisplayed #content_bg{
-    padding-left: 500px;
+    padding-left: 410px;
     transition: all 0.3s;
 }
 
@@ -70,4 +71,17 @@
     font-weight: bold;
     font-family: cursive;
     font-size: 40px;
+}
+.sidebaroptions{
+    padding-left: 20px;
+}
+.sidebarContent{
+    border: 0px solid;
+    -webkit-box-shadow: 0px 2px 14px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 14px -2px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 14px -2px rgba(0,0,0,0.75);
+    padding: 10px;
+}
+#sidebar_appName{
+    text-align: center;
 }

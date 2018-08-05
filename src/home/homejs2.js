@@ -52,9 +52,7 @@ function initMap() {
             var location1 = place1.formatted_address;
             var lat1 = place1.geometry.location.lat();
             var lng1 = place1.geometry.location.lng();
-            document.getElementById('address').innerHTML ="<b>Address</b>:" + location1
-            document.getElementById('lat').innerHTML ="<b>Lat</b>:" + lat1
-            document.getElementById('lng').innerHTML ="<b>Lng</b>:" + lng1
+            document.getElementById('address').innerHTML = location1;
 
         });
         google.maps.event.addListener(autocomplete2, 'place_changed', function () {
@@ -62,9 +60,7 @@ function initMap() {
             var location2 = place2.formatted_address;
             var lat2 = place2.geometry.location.lat();
             var lng2 = place2.geometry.location.lng();
-            document.getElementById('address1').innerHTML = "<b>Address</b>:" +  location2
-            document.getElementById('lat1').innerHTML = "<b>Lat</b>:" + lat2
-            document.getElementById('lng1').innerHTML = "<b>Lng</b>:" + lng2
+            document.getElementById('address1').innerHTML = location2;
         })
 /*
         var origin = document.getElementById('origin-input').value;
@@ -224,8 +220,8 @@ AutocompleteDirectionsHandler.prototype.route = function () {
             trafficLayer.setMap(map);
             var distance = response.routes[0].legs[0].distance.text;
             var duration = response.routes[0].legs[0].duration.text;
-            document.getElementById('distanceInKm').innerHTML = "<b>Distance</b>:" +distance;
-            document.getElementById('duration').innerHTML ="<b>Duration</b>:" + duration
+            document.getElementById('distanceInKm').innerHTML = distance;
+            document.getElementById('duration').innerHTML = duration
             //infowindow.setContent(response.routes[0].legs[0].duration.text + "<br>" + response.routes[0].legs[0].distance.text);
             //infowindow.open(me.map);
         } else {
