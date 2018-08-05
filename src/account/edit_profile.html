@@ -45,7 +45,8 @@
     <div class="row">
         <div class="col-md-12 col-sm-12 col-xs-12">
             <img src="images/myimg.jpg" class="img-circle"  id="profileImg" height="100px" width="100px">
-            <label><h3><b>&nbsp;&nbsp;Dolan Bairagi</b></h3></label>
+            <label><input type="file" onchange="showImage.call(this)"></label>
+            <label><input type="submit" name="submit" value="upload"></label>
         </div>
     </div>
 </div>
@@ -79,5 +80,6 @@
         <div class="col-md-2 col-sm-3 col-xs-1"></div>
     </div>
 </div>
+<script rel="stylesheet" src="profilejs.js"></script>
 </body>
 </html>
